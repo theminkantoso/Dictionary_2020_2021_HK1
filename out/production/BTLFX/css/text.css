@@ -1,0 +1,55 @@
+.root {
+    -fx-background-color:  #b30000;
+}
+#view {
+    -fx-background-color: #f2e6ff;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-text-fill: magenta;
+    -fx-font-weight: 300;
+}
+
+.list-cell {
+    -fx-background-color: #f2e6ff;
+}
+
+.list-cell:hover {
+    -fx-background-color: #ffcccc;
+    -fx-text-fill: #ffff99;
+}
+
+#word {
+    -fx-font-size: 20px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-font-weight: 700;
+    -fx-text-fill: #660000;
+    -fx-background-color: #e6ffff;
+}
+
+#result {
+    -fx-font-size: 18px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-font-weight: 500;
+    -fx-text-fill: #00802b;
+    -fx-background-color: #d9ffb3;
+}
+
+#labelTextEdi {
+    -fx-font-size: 24px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-font-weight: 700;
+    -fx-text-fill: #ffffff;
+}
+
+.button {
+    -fx-text-fill: #9933ff;
+    -fx-background-color: #ffff66;
+    -fx-font-family: serif;
+}
+.button:hover {
+    -fx-background-color: #11ef3a;
+    -fx-text-fill: #ff1a1a;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}

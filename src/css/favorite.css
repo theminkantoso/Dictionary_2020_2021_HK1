@@ -1,0 +1,46 @@
+.root{
+    -fx-background-color: #ffff80;
+}
+
+#search:hover {
+    -fx-background-color: #ccffcc;
+}
+
+#myword {
+    -fx-font-size: 17px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-text-fill: #99ff99;
+    -fx-font-weight: 600;
+}
+
+#label {
+    -fx-font-size: 26px;
+    -fx-font-family: serif;
+    -fx-text-fill: #ff0000;
+    -fx-font-weight: 700;
+}
+
+.button {
+    -fx-background-color: #ffffff;
+}
+
+.button:hover {
+    -fx-background-color: #11ef3a;
+    -fx-text-fill: #ff1a1a;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
+#favorite {
+    -fx-background-color: #ccffcc;
+}
+
+.list-cell {
+    -fx-background-color: #ccffcc;
+}
+
+.list-cell:hover {
+    -fx-background-color: #ffcccc;
+    -fx-text-fill: #ffff99;
+}

@@ -1,0 +1,59 @@
+.root {
+    -fx-background-color: #990000;
+}
+
+#label {
+    -fx-font-size: 24px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-font-weight: 700;
+    -fx-text-fill: #ffffff;
+}
+.button {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #1a1aff;
+    -fx-font-family: serif;
+}
+.button:hover {
+    -fx-background-color: #11ef3a;
+    -fx-text-fill: #ff1a1a;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
+#input:hover {
+    -fx-background-color: #f2e6ff;
+    -fx-scale-x: 1.05;
+}
+
+#view {
+    -fx-background-color: #ffe6e6;
+    -fx-font-size: 16px;
+    -fx-font-family: serif;
+    -fx-text-fill: #000080;
+    -fx-font-weight: 300;
+}
+
+.list-cell {
+    -fx-background-color: #ffe6e6;
+}
+
+.list-cell:hover {
+    -fx-background-color: #ffff99;
+}
+
+#word {
+    -fx-background-color: #ccffe6;
+    -fx-font-size: 22px;
+    -fx-font-family: serif;
+    -fx-text-fill: #000080;
+    -fx-font-weight: 700;
+}
+
+#result {
+    -fx-background-color: #ccffe6;
+    -fx-font-size: 16px;
+    -fx-font-family: serif;
+    -fx-text-fill: #000080;
+    -fx-font-weight: 500;
+}

@@ -1,0 +1,52 @@
+.root{
+    -fx-background-color: #4d4dff;
+}
+
+#language:hover {
+    -fx-background-color: #ccffcc;
+}
+
+#input {
+    -fx-background-color: #e6e6ff;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-text-fill: #00004d;
+    -fx-font-weight: 300;
+}
+
+#output {
+    -fx-font-size: 17px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-text-fill: #4c0080;
+    -fx-font-weight: 400;
+}
+
+#label {
+    -fx-font-size: 26px;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: 700;
+}
+
+#link {
+    -fx-text-fill: #ffff1a;
+    -fx-font-size: 13px;
+}
+
+#link:hover {
+    -fx-text-fill: #55ff00;
+    -fx-underline: true;
+    -fx-font-size: 15px;
+}
+
+.button {
+    -fx-background-color: #ffffff;
+}
+
+.button:hover {
+    -fx-background-color: #11ef3a;
+    -fx-text-fill: #ff1a1a;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}

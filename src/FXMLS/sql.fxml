@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/sql.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLS.Sql">
+    <children>
+        <GridPane alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="195.60001220703126" minHeight="10.0" prefHeight="142.6" vgrow="SOMETIMES" />
+                <RowConstraints fillHeight="false" maxHeight="255.60001220703126" minHeight="10.0" prefHeight="54.99999389648437" vgrow="NEVER" />
+                <RowConstraints maxHeight="408.8000183105469" minHeight="10.0" prefHeight="402.20000610351565" vgrow="ALWAYS" />
+            </rowConstraints>
+            <children>
+                <GridPane alignment="CENTER" maxHeight="-Infinity" prefHeight="100.0" prefWidth="1000.0" GridPane.rowIndex="1" GridPane.vgrow="NEVER">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                  <RowConstraints fillHeight="false" maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="speaker" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#speak" prefHeight="21.0" prefWidth="31.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <graphic>
+                                <ImageView fitHeight="25.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../pngs/speaker.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                  <Button fx:id="favorite" mnemonicParsing="false" onAction="#addFavorite" prefHeight="32.0" prefWidth="92.0" text="Add to Favorite" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="back" mnemonicParsing="false" onMouseClicked="#changeScene" prefHeight="30.0" prefWidth="41.0" text="Back" GridPane.rowIndex="1" />
+                    </children>
+                </GridPane>
+                <SplitPane dividerPositions="0.2635270541082164" prefHeight="160.0" prefWidth="200.0" GridPane.rowIndex="2">
+                    <items>
+                        <AnchorPane maxWidth="-Infinity" minHeight="100.0" minWidth="100.0" prefHeight="160.0" prefWidth="300.0">
+                            <children>
+                                <ListView fx:id="view" layoutY="-3.0" maxWidth="-Infinity" onMouseClicked="#handleOutput" prefHeight="410.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                            <children>
+                                <GridPane layoutX="-2.0" prefHeight="402.0" prefWidth="732.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="197.4" minHeight="10.0" prefHeight="47.799990081787115" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="355.00000991821287" minHeight="10.0" prefHeight="355.00000991821287" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="word" editable="false" prefHeight="78.0" prefWidth="732.0" />
+                                        <TextArea fx:id="result" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+                <GridPane alignment="CENTER" stylesheets="@../css/sql.css">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="106.80000915527344" minHeight="10.0" prefHeight="55.59999694824219" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="87.20000305175782" minHeight="10.0" prefHeight="87.20000305175782" />
+                    </rowConstraints>
+                    <children>
+                        <TextField fx:id="input" onAction="#handleSearch" prefHeight="30.0" prefWidth="1000.0" promptText="Search..." GridPane.hgrow="NEVER" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets left="50.0" right="50.0" />
+                            </GridPane.margin>
+                        </TextField>
+                  <Label fx:id="label" text="SQL Dictionary Edition" />
+                    </children>
+                </GridPane>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

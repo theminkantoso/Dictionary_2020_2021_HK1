@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/hello.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLS.ControlHello">
+   <children>
+      <GridPane prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="293.9999755859375" minHeight="0.0" prefHeight="153.99999084472654" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="600.8" minHeight="10.0" prefHeight="446.8000091552734" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane minHeight="-Infinity" prefHeight="144.0" prefWidth="1000.0" style="-fx-background-color: #339966;">
+               <children>
+                  <Label fx:id="label" alignment="CENTER" layoutX="391.0" layoutY="56.0" prefHeight="42.0" prefWidth="218.0" stylesheets="@../css/hello.css" text="Dictionary" textAlignment="CENTER" textFill="#e2d625" textOverrun="CENTER_WORD_ELLIPSIS">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #99e6ff;" GridPane.rowIndex="1">
+               <children>
+                  <GridPane alignment="CENTER" prefHeight="382.0" prefWidth="1000.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="txt" mnemonicParsing="false" onMouseClicked="#changeTXT" prefHeight="73.0" prefWidth="71.0">
+                           <graphic>
+                              <ImageView fitHeight="77.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../pngs/txt.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sql" mnemonicParsing="false" onMouseClicked="#changeSQL" prefHeight="78.0" prefWidth="84.0" GridPane.columnIndex="1">
+                           <graphic>
+                              <ImageView fitHeight="70.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../pngs/sql.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="ggtrans" mnemonicParsing="false" onMouseClicked="#changeGgtrans" prefHeight="33.0" prefWidth="28.0" GridPane.columnIndex="2">
+                           <graphic>
+                              <ImageView fitHeight="62.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../pngs/ggtrans.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="favorite" mnemonicParsing="false" onMouseClicked="#changeFavorite" prefHeight="73.0" prefWidth="74.0" GridPane.columnIndex="3">
+                           <graphic>
+                              <ImageView fitHeight="72.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../pngs/favorites-icon-png-13.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
